@@ -12,6 +12,7 @@ while True:
         break
 print(numbers)
 
+numbers.sort()
 LengthOfList = len(numbers)
 
 if LengthOfList%2 == 1:
