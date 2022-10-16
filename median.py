@@ -1,5 +1,6 @@
 """Median calculator."""
 """ENTER YOUR SOLUTION HERE!"""
+import math
 
 while True:
     try:
@@ -10,3 +11,14 @@ while True:
     else:
         break
 print(numbers)
+
+LengthOfList = len(numbers)
+
+if LengthOfList%2 == 1:
+    i = math.floor(LengthOfList/2)
+    print ("The median of this list is ", numbers[i])
+else:
+    i = math.ceil(LengthOfList/2)
+    add = numbers[i] + numbers[i-1]
+    median = add/2
+    print ("The median of this list is ", median)
